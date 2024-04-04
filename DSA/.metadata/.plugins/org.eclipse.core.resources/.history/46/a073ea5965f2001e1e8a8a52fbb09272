@@ -1,0 +1,16 @@
+package codingChallenges;
+
+public class Ques_2 {
+	public static char ToLowerCase(char lowerChar) {
+		if(lowerChar >= 'a' && lowerChar <= 'z') {
+			return (char)(lowerChar-('a' - 'A'));
+		}else {
+			return lowerChar ;
+		}
+	}
+ 	public static void main(String args[]) {
+ 		String S = "HEELLO";
+ 		System.out.println(S);
+ 	}
+
+}

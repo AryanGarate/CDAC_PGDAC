@@ -1,0 +1,19 @@
+//2. How Convert lower to upper case without using toUppercase() in java?
+
+package codingChallenges;
+
+public class Ques_2 {
+	public static char ToLowerCase(char lowerChar) {
+		if(lowerChar >= 'a' && lowerChar <= 'z') {
+			return (char)(lowerChar-('a' - 'A'));
+		}else {
+			return lowerChar ;
+		}
+	}
+ 	public static void main(String args[]) {
+ 		String S = "gEELLO";
+ 		String Upper  = ToLowerCase(s);
+ 		System.out.println(S);
+ 	}
+
+}

@@ -1,0 +1,27 @@
+
+//1. Write a Java Program to find LCM of two given numbers. 
+
+
+package in.com;
+
+import java.util.Scanner;
+
+public class Ques_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc =  new Scanner(System.in);
+		int x = sc.nextInt();   //12
+		int y = sc.nextInt(); //8
+		
+		int LCM = 1;
+		for(int i = 1  ; i>=x && i>=y ; i++) {   // i<= 12 && 1<=8 
+			
+			if(x %i == 0 && y%i==0)        // 12 % 1 ==0 && 8%1==0
+				LCM =i;
+		}
+		System.out.printf("GCD of %d and %d is: %d" , x, y, LCM);
+
+	}
+
+}
